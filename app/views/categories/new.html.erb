@@ -1,0 +1,17 @@
+<div>
+<div class="flex gap-3 py-4 items-center bg-blue-700 text-white px-3">
+<%= link_to '<', categories_path%>
+<div class="flex justify-center w-full">
+<p>Add Category</p>
+</div>
+</div>
+<%= form_with  do |f|%>
+<div class="field">
+    <%= f.text_field :name,  autofocus: true, autocomplete: "Category name" %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name,  autofocus: true, autocomplete: "name" %>
+  </div>
+<%end%>
+</div>
