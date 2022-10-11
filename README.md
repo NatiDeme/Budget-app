@@ -1,62 +1,45 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Budget App
 
-# Project Name
-
-> Description the project.
-
+This is a repo for a blog site made using ruby
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- ![](https://img.shields.io/badge/Github-blueviolet)
+- ![](https://img.shields.io/badge/Ruby-red)
+- ![](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+- Tailwindcss
 
-## Live Demo (if available)
+## Setup
 
-[Live Demo Link](https://livedemo.com)
+If you wish to run the project locally, please do the following:
 
+- Clone the repository to your local machine. - **`git clone hhttps://github.com/NatiDeme/Budget-app`** - **`cd Budget-app`**
 
-## Getting Started
+### Running the app
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Run `rake db:create:all` and `rake db:migrate`
+- Run `rake db:seed` to populate the database with some sample data.
+- Run `rails s` to start the server.
+- In your browser, go to http://localhost:3000.
 
+### Testing
 
-To get a local copy up and running follow these simple example steps.
+- Run gem install rspec to install Rspec,
+- Run rspec spec to run all the test cases, and
+- Run rspec to run test cases individually.
 
-### Prerequisites
+## Author
 
-### Setup
+👤 **Natnael Demelash**
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/NatiDeme)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natnael-demelash/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Terbeche/Catalog-Ruby-Capstone/issues).
 
 ## Show your support
 
@@ -65,11 +48,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
