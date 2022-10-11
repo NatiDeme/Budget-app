@@ -1,26 +1,27 @@
+<div class="flex flex-col"> 
 <h2>Log in</h2>
-
+<div> 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="flex flex-col gap-2"> 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+   
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    
+    <%= f.password_field :password, autocomplete: "current-password" , placeholder: "Password" %>
   </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
 
-  <div class="actions">
+  <div class="actions bg-blue-700 text-white p-3 w-40 flex justify-center">
     <%= f.submit "Log in" %>
   </div>
+</div>
 <% end %>
+</div>
 
+<div class="flex justify-center flex-col gap-0 text-gray-500"> 
 <%= render "devise/shared/links" %>
+</div>
+</div>
