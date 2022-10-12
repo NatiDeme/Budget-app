@@ -1,17 +1,26 @@
 <div>
 <div class="flex gap-3 py-4 items-center bg-blue-700 text-white px-3">
-<%= link_to '<', categories_path%>
+<%= link_to categories_path do%>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+</svg>
+<%end%>
 <div class="flex justify-center w-full">
 <p>Add Category</p>
 </div>
 </div>
-<%= form_with  do |f|%>
+<%= form_with model: @Category, method: :post, local: true,
+  url: categories_path, scope: :Category  do |f|%>
+<div class="flex flex-col w-full items-center mt-2 gap-2"> 
 <div class="field">
-    <%= f.text_field :name,  autofocus: true, autocomplete: "Category name" %>
+    <%= f.text_field :name,  autofocus: true, autocomplete: "Category", placeholder: "Category name", required: true %>
   </div>
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name,  autofocus: true, autocomplete: "name" %>
+    <%= f.text_field :icon,  autofocus: true, autocomplete: "icon", placeholder: "Icon",  required: true %>
   </div>
+  <div class="actions bg-blue-700 text-white p-3 w-40 flex justify-center">
+    <%= f.submit "Save" %>
+  </div>
+</div>
 <%end%>
 </div>
