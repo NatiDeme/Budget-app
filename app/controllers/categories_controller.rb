@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
     @category.user = current_user
     if @category.valid?
       @category.save
-      redirect categories_path
+      redirect_to categories_path
     end
   end
 

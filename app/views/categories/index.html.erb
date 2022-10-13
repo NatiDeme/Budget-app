@@ -4,10 +4,12 @@
   </div>
   <div>
     <% @category.each do |me|%>
-    <div class="flex gap-3">
-      <%= image_tag me.icon%>
+    <%= link_to transactions_path do%>
+    <div class="flex gap-3 items-center">
+      <%= image_tag me.icon, class: "h-14" %>
       <%= me.name%>
     <div> 
+    <%end%>
     <%end%>
   </div>
 </div>
