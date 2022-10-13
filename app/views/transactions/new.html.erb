@@ -1,12 +1,12 @@
  <div class="bg-blue-700 text-white flex p-3">
-  <%= link_to transactions_path do%>
+  <%= link_to   :back do%>
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
 </svg>
 <%end%>
     <p class="font-bold text-xl ml-20">Add Transactions</p>
   </div>
-  <%= form_with model: @transaction, method: :post, local: true, url: transactions_path, scope: :transaction  do |f|%>
+  <%= form_with model: @transaction, method: :post, local: true, url: category_transactions_path, scope: :transaction  do |f|%>
 <div class="flex flex-col w-full mt-2 gap-2"> 
 <div class="field">
     <%= f.text_field :name,  autofocus: true, autocomplete: "Category", placeholder: "Transaction name", required: true %>

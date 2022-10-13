@@ -9,6 +9,15 @@
   </div>
 
 </div>
+ <div>
+    <% @transactions.each do |transaction|%>
+    <div class="flex flex-col gap-3">
+    <%= transaction.entities.name %>
+    <%= transaction.entities.amount %>
+
+    <div> 
+    <%end%>
+  </div>
 <div class="bg-blue-700 text-white p-3 mx-14 flex justify-center mt-3">
-    <%= link_to 'Add a new transaction', new_transaction_path %>
+    <%= link_to 'Add a new transaction', new_category_transaction_path(@group_id) %>
   </div>

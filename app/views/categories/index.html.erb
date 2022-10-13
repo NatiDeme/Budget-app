@@ -4,7 +4,7 @@
   </div>
   <div>
     <% @category.each do |me|%>
-    <%= link_to transactions_path do%>
+    <%= link_to transactions_path(me.id) do%>
     <div class="flex gap-3 items-center">
       <%= image_tag me.icon, class: "h-14" %>
       <%= me.name%>
