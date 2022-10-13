@@ -11,15 +11,16 @@
 </div>
 <%= form_with model: @Category, method: :post, local: true,
   url: categories_path, scope: :Category  do |f|%>
-<div class="flex flex-col w-full items-center mt-2 gap-2"> 
+<div class="flex flex-col w-full mt-2"> 
 <div class="field">
-    <%= f.text_field :name,  autofocus: true, autocomplete: "Category", placeholder: "Category name", required: true %>
+    <%= f.text_field :name,  autofocus: true, autocomplete: "Category", placeholder: "Category name", required: true, class: 'w-full h-14 border-none' %>
   </div>
+  <hr/>
   <div class="field">
-    <%= f.text_field :icon,  autofocus: true, autocomplete: "icon", placeholder: "Icon",  required: true %>
+    <%= f.text_field :icon,  autofocus: true, autocomplete: "icon", placeholder: "Icon",  required: true, class: 'w-full h-14 border-none' %>
   </div>
-  <div class="actions bg-blue-700 text-white p-3 w-40 flex justify-center">
-    <%= f.submit "Save" %>
+  <div class="actions text-white w-full text-center mt-4">
+    <%= f.submit "Save", class: 'w-40 bg-blue-700 p-3 ' %>
   </div>
 </div>
 <%end%>

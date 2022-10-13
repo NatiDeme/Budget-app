@@ -1,7 +1,15 @@
 <div class="w-full">
-  <div class="bg-blue-700 text-white flex justify-center p-3">
+  <div class="bg-blue-700 text-white flex justify-around p-3">
     <p class="font-bold text-xl">Categories</p>
+    <div class="bg-blue-700 text-white mx-5">
+    <%= button_to  destroy_user_session_path, method: :delete do%>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+</svg>
+<%end%>
   </div>
+  </div>
+  
   <div>
     <% @category.each do |me|%>
     <%= link_to transactions_path(me.id), class:'flex items-center bg-white m-2 gap-3 text-lg h-16' do%>
