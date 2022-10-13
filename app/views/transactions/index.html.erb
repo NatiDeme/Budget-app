@@ -9,13 +9,23 @@
   </div>
 
 </div>
- <div>
+<div>
+<%sum = 0%>
+<% @transactions.each do |transaction|%>
+  <%sum += transaction.entities.amount%>
+<%end%>
+<p class="flex items-center bg-white m-2 gap-3 text-lg h-10">Total Amount: <%= sum%></p>
+</div>
+ <div>  
     <% @transactions.each do |transaction|%>
-    <div class="flex flex-col gap-3">
-    <%= transaction.entities.name %>
-    <%= transaction.entities.amount %>
-
-    <div> 
+    <div class=" bg-white m-2 px-5">
+    <div class="flex items-center gap-3  text-xl">
+    <p><%= transaction.entities.name %></p>
+    <p><%= '$' %><%= transaction.entities.amount %><p>
+    </div> 
+    <p>Transaction Date: <%= transaction.entities.created_at.strftime("%D") %><p>
+    <p>Transaction Time: <%= transaction.entities.created_at.strftime("%H:%M") %><p>
+    </div>
     <%end%>
   </div>
 <div class="bg-blue-700 text-white p-3 mx-14 flex justify-center mt-3">

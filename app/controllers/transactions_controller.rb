@@ -26,7 +26,7 @@ class TransactionsController < ApplicationController
     @group_entity.entities = @transaction
    
     @group_entity.save
-    redirect_to category_transactions_path
+    redirect_to transactions_path(@group.id)
     
   end
 

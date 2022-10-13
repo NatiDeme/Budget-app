@@ -4,11 +4,9 @@
   </div>
   <div>
     <% @category.each do |me|%>
-    <%= link_to transactions_path(me.id) do%>
-    <div class="flex gap-3 items-center">
+    <%= link_to transactions_path(me.id), class:'flex items-center bg-white m-2 gap-3 text-lg h-16' do%>
       <%= image_tag me.icon, class: "h-14" %>
-      <%= me.name%>
-    <div> 
+      <%= me.name %>
     <%end%>
     <%end%>
   </div>

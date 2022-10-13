@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'users#index'
   devise_for :users
   get '/transactions/:id', to: 'transactions#index', as: 'transactions'
+
   # get '/transactions/new', to: 'transactions#new', as: 'new_transaction'
   resources :categories, only: %i[index new create] do
     resources :transactions, only: %i[index new create]
