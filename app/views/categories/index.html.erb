@@ -12,8 +12,8 @@
   
   <div>
     <% @category.each do |me|%>
-    <%= link_to transactions_path(me.id), class:'flex items-center bg-white m-2 gap-3 text-lg h-16' do%>
-      <%= image_tag me.icon, class: "h-14" %>
+    <%= link_to transactions_path(me.id), class:'card1 flex items-center bg-white m-2 gap-3 text-lg h-16' do%>
+      <%= image_tag me.icon, class: "h-14 " %>
       <%= me.name %>
     <%end%>
     <%end%>
