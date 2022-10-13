@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "category/transaction.html.tailwindcss", type: :feature do
+RSpec.describe 'category/transaction.html.tailwindcss', type: :feature do
   describe 'Tesing the creation of category' do
     before :all do
       @user1 = User.create(name: 'Nati', email: 'user@example.com', password: 'password', confirmed_at: Time.now)
@@ -8,7 +8,7 @@ RSpec.describe "category/transaction.html.tailwindcss", type: :feature do
       @transaction1 = Entity.create(name: 'T-shirt', amount: '20', user: @user1)
       @entitygroup = GroupEntity.create(entities: @transaction1, groups: @group1)
     end
-     it 'shows transaction' do
+    it 'shows transaction' do
       visit root_path
       click_link 'Log in'
       within('body') do
@@ -20,7 +20,7 @@ RSpec.describe "category/transaction.html.tailwindcss", type: :feature do
       click_on(class: 'card1', match: :first)
       expect(page).to have_content('T-shirt')
     end
-     it 'shows transaction amount' do
+    it 'shows transaction amount' do
       visit root_path
       click_link 'Log in'
       within('body') do

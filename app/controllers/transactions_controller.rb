@@ -9,9 +9,11 @@ class TransactionsController < ApplicationController
     # # puts @transaction[0].entities
     # puts 'asdasdasdas'
   end
+
   def new
     @groups = Group.all
   end
+
   def create
     @keep = params[:id]
     @group_id = params.require(:transaction).permit(:groups_id)
@@ -19,15 +21,12 @@ class TransactionsController < ApplicationController
     @group_entity = GroupEntity.new
     @transaction = Entity.new(transaction_params)
     @transaction.user = current_user
-    if @transaction.valid?
-      @transaction.save
-    end
+    @transaction.save if @transaction.valid?
     @group_entity.groups = @group
     @group_entity.entities = @transaction
-   
+
     @group_entity.save
     redirect_to transactions_path(@group.id)
-    
   end
 
   private

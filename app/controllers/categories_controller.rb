@@ -3,16 +3,16 @@ class CategoriesController < ApplicationController
   def index
     @category = Group.all
   end
+
   def new
     @category = Group.new
   end
+
   def create
     @category = Group.new(category_params)
     @category.user = current_user
-    if @category.valid?
-      @category.save
-      redirect_to categories_path
-    end
+    @category.save
+    redirect_to categories_path
   end
 
   private
