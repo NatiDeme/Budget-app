@@ -2,6 +2,8 @@
 
 This is a repo holds a Ruby on Rails project that serves as a budget tracking mobile version web app.
 
+### Click on picture to watch a description about the project:
+[![Watch the video]()](https://drive.google.com/file/d/1tk1QpcStTDCFR-7_85tuyGhbuGeQn10w/view?usp=sharing)
 ## Built With
 
 - ![](https://img.shields.io/badge/Github-blueviolet)
