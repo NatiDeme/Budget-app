@@ -50,7 +50,6 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'cancancan'
   gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rails-controller-testing'
@@ -77,3 +76,4 @@ end
 
 gem 'devise'
 gem 'tailwindcss-rails', '~> 2.0'
+gem 'cancancan'
