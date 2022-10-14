@@ -1,6 +1,6 @@
 # Budget App
 
-This is a repo for a blog site made using ruby
+This is a repo holds a Ruby on Rails project that serves as a budget tracking mobile version web app.
 
 ## Built With
 
@@ -8,6 +8,10 @@ This is a repo for a blog site made using ruby
 - ![](https://img.shields.io/badge/Ruby-red)
 - ![](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 - Tailwindcss
+
+## Heroku Link
+
+https://itan-budget.herokuapp.com/
 
 ## Setup
 
@@ -19,7 +23,7 @@ If you wish to run the project locally, please do the following:
 
 - Run `rake db:create:all` and `rake db:migrate`
 - Run `rake db:seed` to populate the database with some sample data.
-- Run `rails s` to start the server.
+- Run `bin/dev` to start the server.
 - In your browser, go to http://localhost:3000.
 
 ### Testing
