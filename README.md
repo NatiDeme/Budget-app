@@ -1,62 +1,51 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Budget App
 
-# Project Name
+This is a repo holds a Ruby on Rails project that serves as a budget tracking mobile version web app.
 
-> Description the project.
-
-
+### Click on picture to watch a description about the project:
+[![Watch the video](https://github.com/NatiDeme/Budget-app/blob/add-features/app/assets/images/page.png)](https://drive.google.com/file/d/1tk1QpcStTDCFR-7_85tuyGhbuGeQn10w/view?usp=sharing)
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- ![](https://img.shields.io/badge/Github-blueviolet)
+- ![](https://img.shields.io/badge/Ruby-red)
+- ![](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+- Tailwindcss
 
-## Live Demo (if available)
+## Heroku Link
 
-[Live Demo Link](https://livedemo.com)
+https://itan-budget.herokuapp.com/
 
+## Setup
 
-## Getting Started
+If you wish to run the project locally, please do the following:
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Clone the repository to your local machine. - **`git clone hhttps://github.com/NatiDeme/Budget-app`** - **`cd Budget-app`**
 
+### Running the app
 
-To get a local copy up and running follow these simple example steps.
+- Run `rake db:create:all` and `rake db:migrate`
+- Run `rake db:seed` to populate the database with some sample data.
+- Run `bin/dev` to start the server.
+- In your browser, go to http://localhost:3000.
 
-### Prerequisites
+### Testing
 
-### Setup
+- Run gem install rspec to install Rspec,
+- Run rspec spec to run all the test cases, and
+- Run rspec to run test cases individually.
 
-### Install
+## Author
 
-### Usage
+👤 **Natnael Demelash**
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/NatiDeme)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natnael-demelash/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Terbeche/Catalog-Ruby-Capstone/issues).
 
 ## Show your support
 
@@ -65,11 +54,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
